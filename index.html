@@ -53,7 +53,7 @@
         background-color: #f8f9fa;
         padding: 20px;
         border-radius: 5px;
-        max-height: 80vh;
+        height: 400px; /* Fixed height to ensure scrollbar */
         overflow-y: auto;
         box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       }
@@ -103,11 +103,14 @@
       <a href="https://nguyenky0904.github.io/buoi7/index.html">Buổi 7</a>
       <a href="https://nguyenky0904.github.io/buoi8/index.htm">Buổi 8</a>
       <a href="https://nguyenky0904.github.io/buoi9/">Buổi 9</a>
+      <!-- Additional links to ensure scrollbar appears -->
+      <a href="">Buổi 10</a>
+     
     </div>
 
     <!-- Notification -->
     <div class="notification" id="notification">
-      Bạn đã cuộn tới cuối sidebar!
+      Bạn đã cuộn tới cuối trang!
     </div>
 
     <!-- Main content -->
@@ -137,7 +140,7 @@
       const notification = document.getElementById('notification');
 
       sidebar.addEventListener('scroll', () => {
-        // Check if scrolled to bottom
+        // Check if scrolled to bottom (with small tolerance)
         if (sidebar.scrollTop + sidebar.clientHeight >= sidebar.scrollHeight - 5) {
           notification.style.display = 'block';
           // Hide notification after 3 seconds
