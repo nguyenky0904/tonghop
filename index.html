@@ -4,48 +4,148 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Giới Thiệu Bản Thân - Nguyễn Kỳ</title>
-    <link rel="stylesheet" href="style5.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .profile-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+
+      .contact-info {
+        margin-top: 20px;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin: 5px;
+      }
+
+      /* Sidebar styles */
+      .sidebar {
+        width: 200px;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 5px;
+        max-height: 80vh;
+        overflow-y: auto;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      }
+
+      .sidebar a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #333;
+        margin-bottom: 5px;
+      }
+
+      .sidebar a:hover {
+        background-color: #e9ecef;
+        border-radius: 3px;
+      }
+
+      /* Main content adjustment */
+      .main-content {
+        margin-left: 240px;
+        padding: 20px;
+      }
+
+      /* Notification style */
+      .notification {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #28a745;
+        color: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      }
+    </style>
   </head>
   <body>
-    <table>
-      <tr>
-        <td id="td1"></td>
-        <td><a href="https://nguyenky0904.github.io/buoi.1/">Buổi 1</a></td>
-        <td><a href="https://nguyenky0904.github.io/buoi.2/">Buổi 2</a></td>
-        <td><a href="https://nguyenky0904.github.io/buoi3/">Buổi 3</a></td>
-        <td><a href="https://nguyenky0904.github.io/buoi4/">Buổi 4</a></td>
-        <td><a href="">Buổi 5</a></td>
-        <td><a href="https://nguyenky0904.github.io/buoi6/">Buổi 6</a></td>    
-        
-        <td><a href="https://nguyenky0904.github.io/buoi7/index.html">Buổi 7</a></td>
-        <td><a href="https://nguyenky0904.github.io/buoi8/index.htm">Buổi 8</a></td>
-        <td><a href="https://nguyenky0904.github.io/buoi9/">Buổi 9</a></td>
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+      <a href="https://nguyenky0904.github.io/buoi.1/">Buổi 1</a>
+      <a href="https://nguyenky0904.github.io/buoi.2/">Buổi 2</a>
+      <a href="https://nguyenky0904.github.io/buoi3/">Buổi 3</a>
+      <a href="https://nguyenky0904.github.io/buoi4/">Buổi 4</a>
+      <a href="">Buổi 5</a>
+      <a href="https://nguyenky0904.github.io/buoi6/">Buổi 6</a>
+      <a href="https://nguyenky0904.github.io/buoi7/index.html">Buổi 7</a>
+      <a href="https://nguyenky0904.github.io/buoi8/index.htm">Buổi 8</a>
+      <a href="https://nguyenky0904.github.io/buoi9/">Buổi 9</a>
+    </div>
 
+    <!-- Notification -->
+    <div class="notification" id="notification">
+      Bạn đã cuộn tới cuối sidebar!
+    </div>
 
-        
-      </tr>
-    </table>
-    <div class="container">
-      <img
-        src="./cuky.jpg"
-        alt="Nguyễn Kỳ"
-        alt="Ảnh đại diện"
-        class="profile-img"
-      />
-      <h2>Xin chào cô và các bạn!</h2>
-      <h3>Em là Nguyễn Kỳ - Sinh viên lớp CNTT D2024A</h3>
-      <p>EM quê ở Hà Nội, hiện đang  học tập tại quận Cầu Giấy,Hà nội</p>
-      <p>
-        Em là sinh viên ngành Công nghệ Thông tin tại Đại học Thủ Đô Hà Nội, với
-        niềm đam mê mãnh liệt về lập trình.  
-        
-      </p>
-      <div class="contact-info">
-        <p>Hãy kết nối với em qua:</p>
-        <a href="mailto:trieunphan206trieunphan206@gmail.com" class="btn">Email</a>
-        
-        
+    <!-- Main content -->
+    <div class="main-content">
+      <div class="container">
+        <img
+          src="./cuky.jpg"
+          alt="Nguyễn Kỳ"
+          class="profile-img"
+        />
+        <h2>Xin chào cô và các bạn!</h2>
+        <h3>Em là Nguyễn Kỳ - Sinh viên lớp CNTT D2024A</h3>
+        <p>EM quê ở Hà Nội, hiện đang học tập tại quận Cầu Giấy, Hà Nội</p>
+        <p>
+          Em là sinh viên ngành Công nghệ Thông tin tại Đại học Thủ Đô Hà Nội, với
+          niềm đam mê mãnh liệt về lập trình.
+        </p>
+        <div class="contact-info">
+          <p>Hãy kết nối với em qua:</p>
+          <a href="mailto:trieunphan206trieunphan206@gmail.com" class="btn">Email</a>
+        </div>
       </div>
     </div>
+
+    <script>
+      const sidebar = document.getElementById('sidebar');
+      const notification = document.getElementById('notification');
+
+      sidebar.addEventListener('scroll', () => {
+        // Check if scrolled to bottom
+        if (sidebar.scrollTop + sidebar.clientHeight >= sidebar.scrollHeight - 5) {
+          notification.style.display = 'block';
+          // Hide notification after 3 seconds
+          setTimeout(() => {
+            notification.style.display = 'none';
+          }, 3000);
+        }
+      });
+    </script>
   </body>
 </html>
